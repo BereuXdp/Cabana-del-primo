@@ -70,7 +70,7 @@
   const chapters = $$('.chapter');
   const panels = $$('.panel');
   const ROMAN = ['I', 'II', 'III'];
-  const SLIDE_TIME = 6.5;
+  const SLIDE_TIME = 3.5;
 
   // Letras dos títulos do hero (anime.js já cria cópia acessível e aria-hidden)
   const titleChars = titles.map((t) => splitText(t, { chars: { wrap: 'clip' } }).chars);
