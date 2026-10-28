@@ -1,0 +1,11 @@
+# Material de referência e originais (o site usa assets/)
+Referencias/
+Imagens/
+
+# Configuração local do Claude Code
+.claude/
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store

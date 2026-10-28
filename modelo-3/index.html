@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cabaña del Primo · Parrilla Argentina em Fortaleza</title>
+  <meta name="description" content="Cabaña del Primo: a autêntica parrilla argentina de Fortaleza. Cortes selecionados, adega com mais de 140 rótulos e espaço privativo para eventos. Unidades Jardins e RioMar.">
+  <meta property="og:title" content="Cabaña del Primo · Parrilla Argentina">
+  <meta property="og:image" content="../assets/img/adega.jpg">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Hanken+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // mostra a abertura só quando o JS roda e ninguém pediu menos movimento
+    try {
+      if (!matchMedia("(prefers-reduced-motion: reduce)").matches && localStorage.getItem("cdp-motion") !== "reduce") document.documentElement.classList.add("js-intro");
+    } catch (e) { document.documentElement.classList.add("js-intro"); }
+  </script>
+</head>
+<body>
+  <!-- Abertura: as portas da casa se abrem sozinhas e revelam o hero -->
+  <div class="intro" id="intro">
+    <div class="intro__doors" aria-hidden="true">
+      <div class="door door--l"><span class="door__frame"></span><span class="door__word">Nossa</span><i class="door__handle"></i></div>
+      <div class="door door--r"><span class="door__frame"></span><span class="door__word">Casa</span><i class="door__handle"></i></div>
+    </div>
+    <p class="intro__kicker eyebrow" aria-hidden="true">Esta é</p>
+    <button class="intro__skip" id="introSkip">Pular abertura</button>
+  </div>
+
+
+  <header class="hd" id="hd">
+    <a href="#inicio" class="hd__logo" aria-label="Cabaña del Primo, início"><img src="../assets/img/logo-light.png" alt="Cabaña del Primo"></a>
+    <nav class="hd__nav" aria-label="Principal">
+      <a href="#historia">História</a>
+      <a href="#ambientes">Ambientes</a>
+      <a href="#carta">Carta</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#unidades">Unidades</a>
+    </nav>
+    <button type="button" class="hd__book" data-booking>Reservar</button>
+    <button class="hd__burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <div class="nav-sheet" id="navSheet" aria-hidden="true">
+    <nav>
+      <a href="#historia">História</a>
+      <a href="#ambientes">Ambientes</a>
+      <a href="#carta">Carta</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#unidades">Unidades</a>
+      <a href="#" data-booking>Reservar</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero: slideshow -->
+    <section class="hero" id="inicio" tabindex="-1">
+      <div class="slides" id="slides">
+        <figure class="slide is-active"><img src="../assets/img/salao-principal.jpg" alt="Salão principal com mesas postas"></figure>
+        <figure class="slide"><img src="../assets/img/adega.jpg" alt="Adega Grand Cru"></figure>
+        <figure class="slide"><img src="../assets/img/hero-corte.jpg" alt="Corte da parrilla servido com risoto"></figure>
+        <figure class="slide"><img src="../assets/img/fachada.jpg" alt="Fachada da casa com jardim"></figure>
+      </div>
+      <div class="hero__veil"></div>
+
+      <div class="hero__copy">
+        <p class="eyebrow">Parrilla argentina · Fortaleza</p>
+        <h1 class="hero__title">
+          <span class="ht is-active">A casa</span>
+          <span class="ht">A adega</span>
+          <span class="ht">O fogo</span>
+          <span class="ht">O jardim</span>
+        </h1>
+        <div class="hero__row">
+        <ol class="hero__dots" id="dots" aria-label="Imagens">
+          <li class="is-active"><button aria-label="Imagem 1"><i></i></button><span>Salão</span></li>
+          <li><button aria-label="Imagem 2"><i></i></button><span>Adega</span></li>
+          <li><button aria-label="Imagem 3"><i></i></button><span>Parrilla</span></li>
+          <li><button aria-label="Imagem 4"><i></i></button><span>Fachada</span></li>
+        </ol>
+        <button type="button" class="hero__cta" data-booking>Reservar mesa <i aria-hidden="true">→</i></button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- História: capítulos deslizam para o lado com o scroll -->
+    <section class="story" id="historia">
+      <div class="story__pin">
+        <div class="story__track" id="storyTrack">
+          <article class="chapter">
+            <figure class="chapter__img"><img src="../assets/img/fachada.jpg" alt="Fachada do Cabaña del Primo no Jardins Open Mall" loading="lazy"></figure>
+            <div class="chapter__body">
+              <span class="chapter__num" aria-hidden="true">I</span>
+              <p class="eyebrow">Capítulo I · A origem</p>
+              <h2 class="h2">Os primeiros<br>em Fortaleza</h2>
+              <p>O Cabaña del Primo foi o pioneiro em trazer a autêntica parrilla argentina para a cidade, no mesmo estilo das encontradas nas grandes capitais do mundo.</p>
+            </div>
+          </article>
+          <article class="chapter">
+            <figure class="chapter__img"><img src="../assets/img/risoto-carne.jpg" alt="Corte da parrilla servido com risoto" loading="lazy"></figure>
+            <div class="chapter__body">
+              <span class="chapter__num" aria-hidden="true">II</span>
+              <p class="eyebrow">Capítulo II · O corte</p>
+              <h2 class="h2">Seleção<br>sem atalhos</h2>
+              <p>Nossas carnes vêm de fornecedores especialistas em cortes especiais, os mesmos que atendem os principais restaurantes de São Paulo.</p>
+            </div>
+          </article>
+          <article class="chapter">
+            <figure class="chapter__img"><img src="../assets/img/mesa-vinho.jpg" alt="Mesa posta com vinho" loading="lazy"></figure>
+            <div class="chapter__body">
+              <span class="chapter__num" aria-hidden="true">III</span>
+              <p class="eyebrow">Capítulo III · A mesa</p>
+              <h2 class="h2">O ritual<br>da parrilla</h2>
+              <p>Preparadas na parrilla, no tradicional estilo argentino e uruguaio, e servidas ao lado de uma adega com mais de 140 rótulos.</p>
+            </div>
+          </article>
+        </div>
+        <div class="story__ui" aria-hidden="true">
+          <span class="story__count"><b id="storyNum">I</b> / III</span>
+          <span class="story__bar"><i id="storyBar"></i></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ambientes: painéis que se expandem -->
+    <section class="spaces" id="ambientes">
+      <header class="sec-title">
+        <p class="eyebrow">Ambientes</p>
+        <h2 class="h2">Cada canto,<br>uma ocasião</h2>
+      </header>
+      <div class="panels" id="panels">
+        <article class="panel is-open" tabindex="0">
+          <img src="../assets/img/salao-principal.jpg" alt="Salão principal" loading="lazy">
+          <div class="panel__body"><span class="panel__n">01</span><h3>Salão</h3><p>Pé-direito alto, cortinas de linho e luz natural ao longo do dia.</p></div>
+        </article>
+        <article class="panel" tabindex="0">
+          <img src="../assets/img/adega.jpg" alt="Adega Grand Cru" loading="lazy">
+          <div class="panel__body"><span class="panel__n">02</span><h3>Grand Cru</h3><p>Mesas entre as garrafas, para quem escolhe o vinho primeiro.</p></div>
+        </article>
+        <article class="panel" tabindex="0">
+          <img src="../assets/img/drinks.jpg" alt="Bar" loading="lazy">
+          <div class="panel__body"><span class="panel__n">03</span><h3>Bar</h3><p>Coquetéis autorais com frutas frescas para abrir a noite.</p></div>
+        </article>
+        <article class="panel" tabindex="0">
+          <img src="../assets/img/salao.jpg" alt="Espaço privativo" loading="lazy">
+          <div class="panel__body"><span class="panel__n">04</span><h3>Privativo</h3><p>Para até 80 convidados, com entrada e banheiro independentes.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Carta: roda de pratos que gira com o scroll -->
+    <section class="wheel" id="carta">
+      <div class="wheel__pin">
+        <header class="wheel__head">
+          <p class="eyebrow">Sugestões da casa</p>
+          <h2 class="h2">À mesa</h2>
+        </header>
+
+        <div class="wheel__stage">
+          <div class="wheel__ring" id="ring">
+            <figure class="plate" data-tag="Da parrilla" data-desc="Risoto cremoso, demi-glace e crispy de cebola.">
+              <img src="../assets/img/risoto-carne.jpg" alt="Bife de chorizo com risoto" loading="lazy">
+              <figcaption><b>Bife de chorizo</b><span>Risoto cremoso, demi-glace e crispy de cebola.</span></figcaption>
+            </figure>
+            <figure class="plate" data-tag="Do mar" data-desc="Purê de abóbora, tomates tostados e brotos.">
+              <img src="../assets/img/polvo.jpg" alt="Polvo na brasa com purê de abóbora" loading="lazy">
+              <figcaption><b>Polvo na brasa</b><span>Purê de abóbora, tomates tostados e brotos.</span></figcaption>
+            </figure>
+            <figure class="plate" data-tag="Do mar" data-desc="Selado ao ponto, crosta de gergelim e purê de baroa.">
+              <img src="../assets/img/atum.jpg" alt="Atum em crosta de gergelim" loading="lazy">
+              <figcaption><b>Atum em crosta</b><span>Selado ao ponto, crosta de gergelim e purê de baroa.</span></figcaption>
+            </figure>
+            <figure class="plate" data-tag="Do mar" data-desc="Batata-doce tostada e purê aveludado.">
+              <img src="../assets/img/peixe.jpg" alt="Peixe da casa com batata-doce" loading="lazy">
+              <figcaption><b>Peixe da casa</b><span>Batata-doce tostada e purê aveludado.</span></figcaption>
+            </figure>
+            <figure class="plate" data-tag="Sobremesa" data-desc="Sorvete, calda quente de chocolate e farofa crocante.">
+              <img src="../assets/img/carolinas.jpg" alt="Carolinas recheadas com sorvete" loading="lazy">
+              <figcaption><b>Carolinas rellenas</b><span>Sorvete, calda quente de chocolate e farofa crocante.</span></figcaption>
+            </figure>
+            <figure class="plate" data-tag="Sobremesa" data-desc="Calda generosa de doce de leite e cacau.">
+              <img src="../assets/img/sobremesa-bolo.jpg" alt="Torta com calda de doce de leite" loading="lazy">
+              <figcaption><b>Torta de doce de leite</b><span>Calda generosa de doce de leite e cacau.</span></figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="wheel__info" aria-hidden="true">
+          <div class="wheel__name"><span class="wheel__tag" id="wheelTag">Da parrilla</span><h3 id="wheelName">Bife de chorizo</h3></div>
+          <p class="wheel__desc" id="wheelDesc">Risoto cremoso, demi-glace e crispy de cebola.</p>
+        </div>
+
+        <div class="wheel__foot">
+          <span class="wheel__count"><b id="wheelNum">01</b> / 06</span>
+          <a class="more" href="http://digitalmenu.com.br/cabana/" target="_blank" rel="noopener">Carta completa <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Eventos -->
+    <section class="events" id="eventos">
+      <img class="events__bg" src="../assets/img/salao.jpg" alt="" aria-hidden="true" loading="lazy">
+      <div class="events__inner">
+        <p class="eyebrow">Espaço privativo</p>
+        <h2 class="h2">Para os encontros<br>que merecem a casa</h2>
+        <p>Cardápio personalizado, som, luz, telão e uma entrada só sua.</p>
+        <dl class="events__stats">
+          <div><dt>80</dt><dd>convidados</dd></div>
+          <div><dt>1</dt><dd>entrada independente</dd></div>
+          <div><dt>∞</dt><dd>cardápios possíveis</dd></div>
+        </dl>
+        <a class="cta" href="https://wa.me/5585992181362?text=Ol%C3%A1!%20Gostaria%20de%20uma%20proposta%20para%20evento%20no%20espa%C3%A7o%20privativo." target="_blank" rel="noopener">Solicitar proposta</a>
+      </div>
+    </section>
+
+    <!-- Unidades -->
+    <section class="units" id="unidades">
+      <header class="sec-title">
+        <p class="eyebrow">Unidades</p>
+        <h2 class="h2">Duas casas</h2>
+      </header>
+      <div class="units__grid">
+        <article class="unit">
+          <img src="../assets/img/fachada.jpg" alt="Unidade Jardins" loading="lazy">
+          <div class="unit__body">
+            <div class="unit__top"><h3>Jardins</h3><span class="open" data-unit="jardins"></span></div>
+            <p>Rua Maria Tomásia, 503 · Jardins Open Mall · Aldeota</p>
+            <table class="hours">
+              <tr><th>Seg a dom</th><td>12h — 00h</td></tr>
+            </table>
+            <div class="unit__links"><a href="tel:+5585992181362">(85) 99218-1362</a><a href="https://www.google.com/maps/search/?api=1&query=Cabana+del+Primo+Rua+Maria+Tomasia+503+Fortaleza" target="_blank" rel="noopener">Mapa ↗</a></div>
+          </div>
+        </article>
+        <article class="unit">
+          <img src="../assets/img/riomar.jpg" alt="Unidade RioMar" loading="lazy">
+          <div class="unit__body">
+            <div class="unit__top"><h3>RioMar</h3><span class="open" data-unit="riomar"></span></div>
+            <p>R. Des. Lauro Nogueira, 1500 · Espaço Gourmet · Shopping RioMar</p>
+            <table class="hours">
+              <tr><th>Seg a sáb</th><td>12h — 00h</td></tr>
+              <tr><th>Domingo</th><td>12h — 22h</td></tr>
+            </table>
+            <div class="unit__links"><a href="tel:+558530353691">(85) 3035-3691</a><a href="https://www.google.com/maps/search/?api=1&query=Cabana+del+Primo+Shopping+RioMar+Fortaleza" target="_blank" rel="noopener">Mapa ↗</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ft">
+    <div class="ft__row">
+      <img src="../assets/img/logo-light.png" alt="Cabaña del Primo" class="ft__logo" loading="lazy">
+      <p class="ft__line">Nossa casa argentina</p>
+      <nav class="ft__social">
+        <a href="https://www.instagram.com/cabanadelprimo/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/cabanadelprimo" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.tiktok.com/@cabanadelprimo" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.tripadvisor.com.br/Restaurant_Review-g303293-d1675629-Reviews-Cabana_del_Primo-Fortaleza_State_of_Ceara.html" target="_blank" rel="noopener">Tripadvisor</a>
+      </nav>
+    </div>
+    <div class="ft__bottom">
+      <span>© <span id="year"></span> Cabaña del Primo</span>
+      <a href="mailto:contato@cabanadelprimo.com.br">contato@cabanadelprimo.com.br</a>
+      <button class="motion-toggle" id="motionToggle" aria-pressed="false">Reduzir movimento</button>
+    </div>
+  </footer>
+
+  <!-- Modal de reserva: sobe da parte de baixo -->
+  <dialog class="bk" id="booking" aria-labelledby="bkTitle">
+    <div class="bk__scrim" data-close></div>
+    <div class="bk__panel">
+      <header class="bk__head">
+        <div>
+          <p class="eyebrow">Reserva</p>
+          <h2 class="bk__title" id="bkTitle">Reserve sua mesa</h2>
+        </div>
+        <button type="button" class="bk__close" data-close aria-label="Fechar reserva"><span></span><span></span></button>
+      </header>
+
+      <form class="bk__form" id="bkForm">
+        <fieldset class="bk__step">
+          <legend>Unidade</legend>
+          <div class="bk__units">
+            <label class="opt-unit">
+              <input type="radio" name="unidade" value="jardins" checked>
+              <span class="opt-unit__box">
+                <b>Jardins</b>
+                <small>Jardins Open Mall · Aldeota</small>
+                <em class="open" data-unit="jardins"></em>
+              </span>
+            </label>
+            <label class="opt-unit">
+              <input type="radio" name="unidade" value="riomar">
+              <span class="opt-unit__box">
+                <b>RioMar</b>
+                <small>Shopping RioMar · Papicu</small>
+                <em class="open" data-unit="riomar"></em>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="bk__step">
+          <legend>Dia</legend>
+          <div class="chips" id="bkDays"></div>
+        </fieldset>
+
+        <fieldset class="bk__step">
+          <legend>Horário</legend>
+          <div class="chips" id="bkTimes"></div>
+        </fieldset>
+
+        <fieldset class="bk__step bk__step--row">
+          <legend>Pessoas</legend>
+          <div class="stepper stepper--lg">
+            <button type="button" data-step="-1" aria-label="Menos uma pessoa">−</button>
+            <output id="bkPeople" aria-live="polite">2</output>
+            <button type="button" data-step="1" aria-label="Mais uma pessoa">+</button>
+          </div>
+        </fieldset>
+
+        <footer class="bk__foot">
+          <p class="bk__summary" id="bkSummary" aria-live="polite"></p>
+          <button type="submit" class="bk__go"><span id="bkGoTxt">Reservar pelo WhatsApp</span><i aria-hidden="true">→</i></button>
+        </footer>
+      </form>
+    </div>
+  </dialog>
+
+  <button class="to-top" id="toTop" aria-label="Voltar ao início">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><circle class="to-top__track" cx="24" cy="24" r="22"/><circle class="to-top__ring" id="toTopRing" cx="24" cy="24" r="22"/><path d="M24 31V17M18 23l6-6 6 6"/></svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@4.2.2/dist/bundles/anime.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

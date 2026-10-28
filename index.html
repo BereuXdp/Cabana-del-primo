@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cabaña del Primo · Parrilla Argentina em Fortaleza</title>
+  <meta name="description" content="Cabaña del Primo: a autêntica parrilla argentina de Fortaleza. Cortes selecionados, adega com mais de 140 rótulos, drinks autorais e espaço para eventos. Unidades Jardins e RioMar.">
+  <meta property="og:title" content="Cabaña del Primo · Parrilla Argentina">
+  <meta property="og:description" content="A autêntica parrilla argentina de Fortaleza.">
+  <meta property="og:image" content="assets/img/hero-corte.jpg">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Barra superior -->
+  <header class="bar" id="bar">
+    <a href="#topo" class="bar__logo" aria-label="Cabaña del Primo, início">
+      <img src="assets/img/logo-light.png" alt="Cabaña del Primo" width="727" height="728">
+    </a>
+    <nav class="bar__nav" aria-label="Principal">
+      <a href="#carta"><i>01</i>Carta</a>
+      <a href="#parrilla"><i>02</i>Da parrilla</a>
+      <a href="#adega"><i>03</i>Adega</a>
+      <a href="#eventos"><i>04</i>Eventos</a>
+      <a href="#unidades"><i>05</i>Unidades</a>
+    </nav>
+    <div class="bar__right">
+      <span class="status" data-status-global><b></b><em>—</em></span>
+      <a class="cta" href="https://wa.me/5585992181362?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20reserva." target="_blank" rel="noopener">Reservar</a>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- Menu mobile / overlay -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <nav>
+      <a href="#carta"><i>01</i>Carta</a>
+      <a href="#parrilla"><i>02</i>Da parrilla</a>
+      <a href="#adega"><i>03</i>Adega</a>
+      <a href="#eventos"><i>04</i>Eventos</a>
+      <a href="#unidades"><i>05</i>Unidades</a>
+    </nav>
+    <div class="drawer__foot">
+      <a href="tel:+5585992181362">Jardins (85) 99218-1362</a>
+      <a href="tel:+558530353691">RioMar (85) 3035-3691</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO: janela que se abre -->
+    <section class="hero" id="topo">
+      <div class="hero__pin">
+        <canvas class="sparks" id="sparks" aria-hidden="true"></canvas>
+        <div class="hero__window" id="heroWindow">
+          <img src="assets/img/hero-corte.jpg" alt="Corte na parrilla servido com risoto e demi-glace" fetchpriority="high">
+        </div>
+        <h1 class="hero__type" id="heroType">
+          <span class="hero__l">Parrilla</span>
+          <span class="hero__r">Argentina</span>
+        </h1>
+        <div class="hero__meta">
+          <p class="mono">Fortaleza · CE<br>Jardins &amp; RioMar</p>
+          <p class="hero__lead">Cortes selecionados, brasa viva e o ritual da parrilla como se faz em Buenos Aires. Pioneiros em Fortaleza.</p>
+          <a class="mono hero__down" href="#manifesto">Role ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Manifesto -->
+    <section class="manifesto" id="manifesto">
+      <div class="wrap">
+        <img class="manifesto__logo" src="assets/img/logo-light.png" alt="" aria-hidden="true" loading="lazy">
+        <p class="manifesto__text split">
+          Fomos os primeiros a trazer a <mark>autêntica parrilla argentina</mark> para Fortaleza. Carne de fornecedores especialistas, os mesmos dos grandes restaurantes de São Paulo, <mark>tratada no fogo</mark> com o tempo que ela pede.
+        </p>
+        <ul class="facts">
+          <li><b data-count="140">0</b><span>+ rótulos na adega</span></li>
+          <li><b data-count="80">0</b><span>lugares no espaço privativo</span></li>
+          <li><b data-count="2">0</b><span>casas em Fortaleza</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Carta de cortes -->
+    <section class="carta" id="carta">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="mono">01 / Carta</span>
+          <h2 class="display">Do fogo<br>para a mesa</h2>
+          <p>Uma amostra do que sai da nossa parrilla. A carta completa tem entradas, cortes, guarnições, sobremesas e a seleção de vinhos.</p>
+        </header>
+        <ol class="cuts" id="cuts">
+          <li>
+            <span class="cuts__n">01</span><span class="cuts__name">Bife de chorizo</span><span class="cuts__desc">Risoto cremoso, demi-glace</span><span class="cuts__tag">Da parrilla</span>
+            <img src="assets/img/risoto-carne.jpg" alt="" loading="lazy">
+          </li>
+          <li>
+            <span class="cuts__n">02</span><span class="cuts__name">Polvo na brasa</span><span class="cuts__desc">Purê de abóbora, tomates tostados</span><span class="cuts__tag">Do mar</span>
+            <img src="assets/img/polvo.jpg" alt="" loading="lazy">
+          </li>
+          <li>
+            <span class="cuts__n">03</span><span class="cuts__name">Atum em crosta</span><span class="cuts__desc">Gergelim, purê de baroa</span><span class="cuts__tag">Do mar</span>
+            <img src="assets/img/atum.jpg" alt="" loading="lazy">
+          </li>
+          <li>
+            <span class="cuts__n">04</span><span class="cuts__name">Peixe da casa</span><span class="cuts__desc">Batata-doce, purê aveludado</span><span class="cuts__tag">Do mar</span>
+            <img src="assets/img/peixe.jpg" alt="" loading="lazy">
+          </li>
+          <li>
+            <span class="cuts__n">05</span><span class="cuts__name">Carolinas rellenas</span><span class="cuts__desc">Sorvete, chocolate quente</span><span class="cuts__tag">Postre</span>
+            <img src="assets/img/carolinas.jpg" alt="" loading="lazy">
+          </li>
+          <li>
+            <span class="cuts__n">06</span><span class="cuts__name">Torta de dulce de leche</span><span class="cuts__desc">Calda generosa, cacau</span><span class="cuts__tag">Postre</span>
+            <img src="assets/img/sobremesa-bolo.jpg" alt="" loading="lazy">
+          </li>
+        </ol>
+        <a class="btn-line" href="http://digitalmenu.com.br/cabana/" target="_blank" rel="noopener"><span>Abrir a carta completa</span><i>↗</i></a>
+      </div>
+    </section>
+
+    <!-- Galeria horizontal presa no scroll -->
+    <section class="reel" id="parrilla">
+      <div class="reel__pin">
+        <div class="reel__head wrap">
+          <span class="mono">02 / Da parrilla</span>
+          <span class="mono reel__count"><b id="reelNum">01</b> / 06</span>
+        </div>
+        <div class="reel__track" id="reelTrack">
+          <div class="reel__intro">
+            <h2 class="display">A casa<br>por dentro</h2>
+            <p>Salão, adega, bar e a mesa posta. Arraste os olhos por aqui antes de vir.</p>
+          </div>
+          <figure class="reel__item reel__item--tall"><img src="assets/img/salao-principal.jpg" alt="Salão principal com mesas postas" loading="lazy"><figcaption class="mono">Salão principal</figcaption></figure>
+          <figure class="reel__item"><img src="assets/img/mesa-vinho.jpg" alt="Mesa com vinho ao entardecer" loading="lazy"><figcaption class="mono">Mesa posta</figcaption></figure>
+          <figure class="reel__item reel__item--wide"><img src="assets/img/fachada.jpg" alt="Fachada do restaurante com jardim" loading="lazy"><figcaption class="mono">Jardins Open Mall</figcaption></figure>
+          <figure class="reel__item"><img src="assets/img/drinks.jpg" alt="Drinks coloridos com frutas" loading="lazy"><figcaption class="mono">Bar</figcaption></figure>
+          <figure class="reel__item reel__item--tall"><img src="assets/img/salao.jpg" alt="Ambiente interno amplo" loading="lazy"><figcaption class="mono">Salão</figcaption></figure>
+          <figure class="reel__item"><img src="assets/img/sobremesa-bolo-2.jpg" alt="Sobremesa com calda" loading="lazy"><figcaption class="mono">Postres</figcaption></figure>
+        </div>
+        <div class="reel__bar"><i id="reelBar"></i></div>
+      </div>
+    </section>
+
+    <!-- Adega -->
+    <section class="adega" id="adega">
+      <div class="adega__img"><img src="assets/img/adega.jpg" alt="Adega com paredes de garrafas" loading="lazy"></div>
+      <div class="adega__body">
+        <span class="mono">03 / Adega &amp; bar</span>
+        <p class="adega__big"><b data-count="140">0</b><sup>+</sup></p>
+        <h2 class="display display--sm">rótulos para<br>cada corte</h2>
+        <p>Adega ampla e moderna, dos clássicos renomados às descobertas únicas. E no bar, drinks com fruta fresca para quem prefere começar pelo copo alto.</p>
+        <div class="adega__thumbs">
+          <img src="assets/img/drink-pitaya.jpg" alt="Drink de pitaya" loading="lazy">
+          <img src="assets/img/bar-vinhos.jpg" alt="Bar de vinhos" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Eventos: ficha técnica -->
+    <section class="eventos" id="eventos">
+      <div class="wrap eventos__grid">
+        <header class="sec-head">
+          <span class="mono">04 / Espaço privativo</span>
+          <h2 class="display">Feche a<br>casa pra você</h2>
+          <p>Um espaço que se torna privativo, com estrutura completa e cardápio montado para o seu evento.</p>
+          <a class="btn-solid" href="https://wa.me/5585992181362?text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20eventos%20no%20espa%C3%A7o%20privativo." target="_blank" rel="noopener">Orçar meu evento <i>→</i></a>
+        </header>
+        <div class="spec">
+          <figure class="spec__img"><img src="assets/img/salao.jpg" alt="Salão preparado para eventos" loading="lazy"></figure>
+          <dl class="spec__list">
+            <div><dt>Capacidade</dt><dd>até 80 pessoas</dd></div>
+            <div><dt>Cardápio</dt><dd>personalizado</dd></div>
+            <div><dt>Áudio &amp; luz</dt><dd>sistema de som e iluminação</dd></div>
+            <div><dt>Projeção</dt><dd>telão, projetor e notebook</dd></div>
+            <div><dt>Acesso</dt><dd>entrada independente</dd></div>
+            <div><dt>Estrutura</dt><dd>banheiro privativo</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unidades com abas e status -->
+    <section class="unidades" id="unidades">
+      <div class="wrap">
+        <header class="unidades__head">
+          <span class="mono">05 / Unidades</span>
+          <div class="tabs" role="tablist">
+            <button role="tab" aria-selected="true" data-tab="jardins">Jardins</button>
+            <button role="tab" aria-selected="false" data-tab="riomar">RioMar</button>
+          </div>
+        </header>
+
+        <article class="unit is-active" data-unit="jardins" role="tabpanel">
+          <h2 class="unit__name">Jardins</h2>
+          <div class="unit__grid">
+            <figure class="unit__img"><img src="assets/img/fachada.jpg" alt="Fachada da unidade Jardins" loading="lazy"></figure>
+            <div class="unit__info">
+              <span class="status" data-status="jardins"><b></b><em>—</em></span>
+              <dl>
+                <div><dt>Endereço</dt><dd>Rua Maria Tomásia, 503<br>Jardins Open Mall · Aldeota</dd></div>
+                <div><dt>Horário</dt><dd>Todos os dias · 12h às 00h</dd></div>
+                <div><dt>Telefone</dt><dd><a href="tel:+5585992181362">(85) 99218-1362</a></dd></div>
+              </dl>
+              <div class="unit__ctas">
+                <a class="btn-solid" href="https://wa.me/5585992181362?text=Ol%C3%A1!%20Gostaria%20de%20reservar%20na%20unidade%20Jardins." target="_blank" rel="noopener">Reservar no WhatsApp <i>→</i></a>
+                <a class="btn-line btn-line--sm" href="https://www.google.com/maps/search/?api=1&query=Cabana+del+Primo+Rua+Maria+Tomasia+503+Fortaleza" target="_blank" rel="noopener"><span>Rota</span><i>↗</i></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="unit" data-unit="riomar" role="tabpanel" hidden>
+          <h2 class="unit__name">RioMar</h2>
+          <div class="unit__grid">
+            <figure class="unit__img"><img src="assets/img/riomar.jpg" alt="Unidade RioMar no Shopping RioMar" loading="lazy"></figure>
+            <div class="unit__info">
+              <span class="status" data-status="riomar"><b></b><em>—</em></span>
+              <dl>
+                <div><dt>Endereço</dt><dd>R. Des. Lauro Nogueira, 1500<br>Espaço Gourmet · Shopping RioMar · Papicu</dd></div>
+                <div><dt>Horário</dt><dd>Seg a sáb · 12h às 00h<br>Domingo · 12h às 22h</dd></div>
+                <div><dt>Telefone</dt><dd><a href="tel:+558530353691">(85) 3035-3691</a></dd></div>
+              </dl>
+              <div class="unit__ctas">
+                <a class="btn-solid" href="tel:+558530353691">Ligar para reservar <i>→</i></a>
+                <a class="btn-line btn-line--sm" href="https://www.google.com/maps/search/?api=1&query=Cabana+del+Primo+Shopping+RioMar+Fortaleza" target="_blank" rel="noopener"><span>Rota</span><i>↗</i></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Faixa laranja de reserva -->
+    <section class="reserva">
+      <a class="reserva__link" href="https://wa.me/5585992181362?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20reserva." target="_blank" rel="noopener">
+        <span class="mono">Mesa para hoje?</span>
+        <span class="reserva__big">Reservar <i>→</i></span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__grid">
+      <img class="foot__logo" src="assets/img/logo-light.png" alt="Cabaña del Primo" loading="lazy">
+      <div class="foot__cols">
+        <div>
+          <span class="mono">Contato</span>
+          <a href="mailto:contato@cabanadelprimo.com.br">contato@cabanadelprimo.com.br</a>
+          <a href="tel:+5585992181362">(85) 99218-1362</a>
+          <a href="tel:+558530353691">(85) 3035-3691</a>
+        </div>
+        <div>
+          <span class="mono">Siga</span>
+          <a href="https://www.instagram.com/cabanadelprimo/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/cabanadelprimo" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.tiktok.com/@cabanadelprimo" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://www.tripadvisor.com.br/Restaurant_Review-g303293-d1675629-Reviews-Cabana_del_Primo-Fortaleza_State_of_Ceara.html" target="_blank" rel="noopener">Tripadvisor</a>
+        </div>
+        <div>
+          <span class="mono">Navegue</span>
+          <a href="#carta">Carta</a>
+          <a href="#adega">Adega</a>
+          <a href="#eventos">Eventos</a>
+          <a href="#unidades">Unidades</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap foot__bottom mono">
+      <span>© <span id="year"></span> Cabaña del Primo</span>
+      <a href="#topo">Topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
